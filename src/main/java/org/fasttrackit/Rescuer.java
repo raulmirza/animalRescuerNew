@@ -4,6 +4,7 @@ public class Rescuer {
 
 
     String name;
+
     int availableMoney;
 
     public Rescuer(String name) {
@@ -15,11 +16,14 @@ public class Rescuer {
 
     }
 
-
-
+    public void feedAnimal (Animal animal, Food food, Rescuer rescuer) {
+        System.out.println(rescuer.name + "gave some:" + food.name + "to:" + animal.name);
 
 
     }
+
+    }
+
 
 
 
