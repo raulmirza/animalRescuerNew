@@ -32,7 +32,7 @@ public class App {
         food.expirationDate = LocalDate.of(2020, 11, 10);
         food.quantity = 1;
         food.price = 2;
-        food.name = "Food's";
+        food.name = "Food";
         food.stock = 5;
 
         Veterinary veterinary = new Veterinary("Alex");
@@ -45,6 +45,8 @@ public class App {
 
         rescuer.feedAnimal(animal, food, rescuer);
 
+        rescuer.playingWithAnimal(animal, activity, rescuer);
+
         rescuer.availableMoney = 2;
         rescuer.name = "Adam";
 
@@ -52,6 +54,9 @@ public class App {
         Dog dog = new Dog("Spike");
 
         dog.colour = "Brown";
+        dog.bite = false;
+        dog.energyLevel = 10;
+
 
 
         Pets pets = new Pets("Spike");
