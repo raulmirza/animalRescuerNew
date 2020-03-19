@@ -17,21 +17,25 @@ public class Rescuer {
 
     }
 
-    public void feedAnimal (Animal animal, Food food, Rescuer rescuer) {
+    public void feedAnimal (Animal animal, Food food) {
 
-        System.out.println(rescuer.name + " just gave some " + food.name + " to " + animal.name);
+        System.out.println(name + " just gave some " + food.name + " to " + animal.name);
 
         System.out.println(animal.name + " was fed!");
 
 
     }
 
-    public void playingWithAnimal (Animal animal, Activity activity, Rescuer rescuer){
+    public void playingWithAnimal (Animal animal, Activity activity){
 
-        System.out.println(rescuer.name + " is now " + activity.name + " with " + animal.name);
+        System.out.println(name + " is now " + activity.name + " with " + animal.name);
     }
 
+
+
+
     }
+
 
 
 

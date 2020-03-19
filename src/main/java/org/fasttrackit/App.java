@@ -43,9 +43,9 @@ public class App {
 
         Rescuer rescuer = new Rescuer("Adam");
 
-        rescuer.feedAnimal(animal, food, rescuer);
+        rescuer.feedAnimal(animal, food);
 
-        rescuer.playingWithAnimal(animal, activity, rescuer);
+        rescuer.playingWithAnimal(animal, activity);
 
         rescuer.availableMoney = 2;
         rescuer.name = "Adam";
