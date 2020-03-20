@@ -19,9 +19,12 @@ public class Rescuer {
 
     public void feedAnimal (Animal animal, Food food) {
 
+
+
         System.out.println(name + " just gave some " + food.name + " to " + animal.name);
 
         System.out.println(animal.name + " was fed!");
+
 
 
     }

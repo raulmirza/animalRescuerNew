@@ -10,12 +10,20 @@ public class Animal {
     int mood;
     String favoriteFood;
 
-    public Animal(String name) {
-        this.name = name;
-    }
+    public Animal(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
 
 
     }
+
+}
+
+
+
+
+
+
+
 
 
 

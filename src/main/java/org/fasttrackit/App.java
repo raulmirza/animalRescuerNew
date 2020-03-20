@@ -24,7 +24,7 @@ public class App {
         animal.name = "Spike";
         animal.favoriteActivity = "Playing catch";
         animal.healtLevel = 1;
-        animal.favoriteFood = "Purina";
+       animal.favoriteFood = "Purina";
 
 
         Food food = new Food("Purina");
