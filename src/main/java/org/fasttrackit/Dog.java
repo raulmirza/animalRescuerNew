@@ -7,7 +7,7 @@ public class Dog extends Animal {
     boolean bite;
 
 
-    public Dog(String name) {
-        super(name);
+    public Dog(String name, String favoriteActivity, String favoriteFood) {
+        super(name, favoriteActivity, favoriteFood);
     }
 }

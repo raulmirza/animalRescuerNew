@@ -7,24 +7,25 @@ public class Rescuer {
 
     int availableMoney;
 
-    public Rescuer(String name) {
+    public Rescuer(String name, int availableMoney) {
         this.name = name;
-    }
-
-    public Rescuer(int availableMoney) {
-
         this.availableMoney = availableMoney;
-
     }
+
+
 
     public void feedAnimal (Animal animal, Food food) {
 
+        if (food.name == animal.favoriteFood){
+
+            System.out.println("return 1");
+
+        }
 
 
         System.out.println(name + " just gave some " + food.name + " to " + animal.name);
 
         System.out.println(animal.name + " was fed!");
-
 
 
     }

@@ -10,17 +10,9 @@ public class Food {
     LocalDate expirationDate;
     int stock;
 
+
     public Food(String name) {
         this.name = name;
-    }
-
-    public Food(double price) {
-        this.price = price;
-    }
-
-
-    public Food(int quantity) {
-        this.quantity = quantity;
     }
 }
 
