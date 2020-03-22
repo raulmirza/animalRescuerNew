@@ -19,7 +19,7 @@ public class App {
         Animal animal = new Animal("Spike","Playing catch", "Purina");
 
         animal.hungerLevel = 1;
-        animal.mood = 1;
+        animal.mood = 5;
         animal.age = 7;
         animal.name = "Spike";
         animal.favoriteActivity = "Playing catch";
@@ -67,6 +67,7 @@ public class App {
 
 
         }
+
 
     }
 

@@ -10,10 +10,19 @@ public class Animal {
     int mood;
     String favoriteFood;
 
+
+
     public Animal(String name, String favoriteActivity, String favoriteFood) {
         this.name = name;
         this.favoriteActivity = favoriteActivity;
         this.favoriteFood = favoriteFood;
+
+
+        String mood = favoriteFood + favoriteActivity;
+
+
+
+
     }
 }
 

@@ -16,8 +16,8 @@ public class Rescuer {
 
     public void feedAnimal (Animal animal, Food food) {
 
-        if (food.name == animal.favoriteFood){
-
+        if (animal.favoriteFood == food.name) {
+            animal.mood= 1;
             System.out.println("return 1");
 
         }
