@@ -3,9 +3,33 @@ package org.fasttrackit;
 public class Rescuer {
 
 
-    String name;
+    private String name;
 
-    int availableMoney;
+    private int availableMoney;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAvailableMoney() {
+        return availableMoney;
+    }
+
+    public void setAvailableMoney(int availableMoney) {
+        this.availableMoney = availableMoney;
+    }
+
+    @Override
+    public String toString() {
+        return "Rescuer{" +
+                "name='" + name + '\'' +
+                ", availableMoney=" + availableMoney +
+                '}';
+    }
 
     public Rescuer(String name, int availableMoney) {
         this.name = name;

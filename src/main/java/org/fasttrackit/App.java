@@ -13,10 +13,12 @@ public class App {
 
         Activity activity = new Activity("Playing catch");
 
+
         activity.name = "Playing catch";
+        activity.duration = 20;
 
 
-        Animal animal = new Animal("Spike","Playing catch", "Purina");
+        Animal animal = new Animal("Playing catch", "Purina");
 
         animal.hungerLevel = 1;
         animal.mood = 5;
@@ -59,7 +61,7 @@ public class App {
 
 
 
-        Pets pets = new Pets("Spike","Playing catch", "Purina");
+        Pets pets = new Pets("Pets","Playing catch", "Purina");
 
         pets.category = "Dog";
 
