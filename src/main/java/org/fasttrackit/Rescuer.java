@@ -40,23 +40,29 @@ public class Rescuer {
 
     public void feedAnimal (Animal animal, Food food) {
 
-        if (animal.favoriteFood == food.name) {
-            animal.mood= 1;
-            System.out.println("return 1");
+        if (animal.getFavoriteFood()== food.getName()) {
+           animal.setMood(animal.getMood()+1);
+            System.out.println(animal.getMood() );
 
         }
 
 
-        System.out.println(name + " just gave some " + food.name + " to " + animal.name);
+        System.out.println(name + " just gave some " + food.getName() + " to " + animal.getName());
 
-        System.out.println(animal.name + " was fed!");
+        System.out.println(animal.getName() + " was fed!");
 
 
     }
 
     public void playingWithAnimal (Animal animal, Activity activity){
 
-        System.out.println(name + " is now " + activity.name + " with " + animal.name);
+        System.out.println(name + " is now " + activity.getName() + " with " + animal.getName());
+        if (animal.getFavoriteActivity() == activity.getName()){
+            animal.setMood(animal.getMood()+1);
+            System.out.println(animal.getMood());
+        }
+
+
     }
 
 

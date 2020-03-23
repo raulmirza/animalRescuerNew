@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Activity {
 
-    String name;
+    private String name;
     private int duration;
 
     public Activity(String name) {

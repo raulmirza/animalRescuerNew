@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Food {
 
-    String name;
+    private String name;
     private double price;
     private int quantity;
-   private LocalDate expirationDate;
-     private int stock;
+    private LocalDate expirationDate;
+    private int stock;
 
 
     public Food(String name) {

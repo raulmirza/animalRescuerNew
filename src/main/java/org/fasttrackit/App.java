@@ -14,33 +14,38 @@ public class App {
         Activity activity = new Activity("Playing catch");
 
 
-        activity.name = "Playing catch";
-        activity.duration = 20;
+        activity.setName("Playing catch");
+
 
 
         Animal animal = new Animal("Playing catch", "Purina");
 
-        animal.hungerLevel = 1;
-        animal.mood = 5;
-        animal.age = 7;
-        animal.name = "Spike";
-        animal.favoriteActivity = "Playing catch";
-        animal.healthLevel = 1;
-       animal.favoriteFood = "Purina";
+       animal.setHealthLevel(1);
+       animal.setFavoriteFood("Purina");
+       animal.setAge(7);
+       animal.setMood(5);
+       animal.setName("Spike");
+       animal.setFavoriteActivity("Playing catch");
+       animal.setHungerLevel(5);
+
+
 
 
         Food food = new Food("Purina");
 
-        food.expirationDate = LocalDate.of(2020, 11, 10);
-        food.quantity = 1;
-        food.price = 2;
-        food.name = "Purina";
-        food.stock = 5;
+        food.setExpirationDate(LocalDate.of(2020,11,10));
+        food.setQuantity(1);
+        food.setPrice(2);
+        food.setStock(5);
+        food.setName("Purina");
+
+
 
         Veterinary veterinary = new Veterinary("Alex");
 
-        veterinary.name = "Alex";
-        veterinary.profession = "Veterinary Doctor";
+
+        veterinary.setName("Alex");
+        veterinary.setProfession("Veterinary Doctor");
 
 
         Rescuer rescuer = new Rescuer("Adam", 2);
@@ -49,21 +54,39 @@ public class App {
 
         rescuer.playingWithAnimal(animal, activity);
 
-        rescuer.availableMoney = 2;
-        rescuer.name = "Adam";
+
+        rescuer.setAvailableMoney(2);
+        rescuer.setName("Adam");
 
 
         Dog dog = new Dog("Spike", "Playing catch", "Purina");
 
-        dog.colour = "Brown";
-        dog.bite = false;
-        dog.energyLevel = 10;
+
+        dog.setColour("Brown");
+        dog.setBite(false);
+        dog.setEnergyLevel(10);
+        dog.setFavoriteFood("Purina");
+        dog.setName("Bullet");
+        dog.setHungerLevel(8);
+        dog.setFavoriteActivity("Playing catch");
+        dog.setMood(8);
+        dog.setHealthLevel(7);
+        animal.setAge(2);
+
 
 
 
         Pets pets = new Pets("Pets","Playing catch", "Purina");
 
-        pets.category = "Dog";
+
+        pets.setCategory("Dog");
+        pets.setFavoriteFood("Purina");
+        pets.setAge(2);
+        pets.setFavoriteActivity("Running");
+        pets.setHealthLevel(2);
+        pets.setHungerLevel(9);
+        pets.setMood(4);
+        pets.setName("Spike");
 
 
 
