@@ -5,6 +5,8 @@ public class Activity {
     private String name;
     private int duration;
 
+
+
     public Activity(String name) {
         this.name = name;
     }

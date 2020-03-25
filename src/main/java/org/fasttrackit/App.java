@@ -15,8 +15,7 @@ public class App {
 
 
         activity.setName("Playing catch");
-
-
+        System.out.println("Activity name: " + activity.getName());
 
         Animal animal = new Animal("Playing catch", "Purina");
 
@@ -28,10 +27,16 @@ public class App {
        animal.setFavoriteActivity("Playing catch");
        animal.setHungerLevel(5);
 
+        System.out.println("Animal name: "+ animal.getName());
+        System.out.println("Heatlh level: " + animal.getHealthLevel());
+        System.out.println("Hunger level: " + animal.getHungerLevel());
+        System.out.println("Favorite activity " + animal.getFavoriteActivity());
+        System.out.println("Animal has now the mood: " + animal.getMood());
+        System.out.println("Your animal age is: " + animal.getAge());
+        System.out.println("This animal favorite food is: " + animal.getFavoriteFood());
 
 
-
-        Food food = new Food("Purina");
+       Food food = new Food("Purina");
 
         food.setExpirationDate(LocalDate.of(2020,11,10));
         food.setQuantity(1);
@@ -39,6 +44,11 @@ public class App {
         food.setStock(5);
         food.setName("Purina");
 
+        System.out.println("Expiration date :" + food.getExpirationDate());
+        System.out.println("Quantity: " + food.getQuantity());
+        System.out.println("Price " + food.getPrice());
+        System.out.println("Stock " + food.getStock());
+        System.out.println("Name " + food.getName());
 
 
         Veterinary veterinary = new Veterinary("Alex");
@@ -47,6 +57,10 @@ public class App {
         veterinary.setName("Alex");
         veterinary.setProfession("Veterinary Doctor");
 
+        System.out.println("Hei! My name is: " +veterinary.getName());
+        System.out.println("My profession is: " + veterinary.getProfession());
+
+
 
         Rescuer rescuer = new Rescuer("Adam", 2);
 
@@ -54,12 +68,16 @@ public class App {
 
         rescuer.playingWithAnimal(animal, activity);
 
-
         rescuer.setAvailableMoney(2);
         rescuer.setName("Adam");
 
+        System.out.println("My name is: " + rescuer.getName());
+        System.out.println("My budget is: " + rescuer.getAvailableMoney());
+
+
 
         Dog dog = new Dog("Spike", "Playing catch", "Purina");
+
 
 
         dog.setColour("Brown");
@@ -72,6 +90,17 @@ public class App {
         dog.setMood(8);
         dog.setHealthLevel(7);
         animal.setAge(2);
+
+        System.out.println("This animal name is: " + dog.getName());
+        System.out.println("His favorite activity is: " + dog.getFavoriteActivity());
+        System.out.println("His favorite food is: " + dog.getFavoriteFood());
+        System.out.println("This dog has an energy level of "  + dog.getEnergyLevel());
+        System.out.println("Hunger level is: " + dog.getHungerLevel());
+        System.out.println("His health level is: " + dog.getHealthLevel());
+        System.out.println("Colour of the dog is: " + dog.getColour());
+        System.out.println("This animal mood: " + dog.getMood());
+        System.out.println("This animal has" + dog.getAge() + "years");
+        System.out.println("Is this dog biteing?: " + dog.isBite());
 
 
 
@@ -87,6 +116,16 @@ public class App {
         pets.setHungerLevel(9);
         pets.setMood(4);
         pets.setName("Spike");
+
+
+        System.out.println("This animal is a:" + pets.getCategory());
+        System.out.println("This pet name is: " + pets.getName());
+        System.out.println("He has:" +  pets.getAge() + " years");
+        System.out.println("Health level is:" + pets.getHealthLevel());
+        System.out.println("Hunger level is:" + pets.getHungerLevel());
+        System.out.println("Favorite activity is:" + pets.getFavoriteActivity());
+        System.out.println("Mood is:" + pets.getMood());
+        System.out.println("Favorite food is:" + pets.getFavoriteFood());
 
 
 

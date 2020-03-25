@@ -89,6 +89,8 @@ public class Animal {
                 ", favoriteFood='" + favoriteFood + '\'' +
                 '}';
     }
+
+
 }
 
 
