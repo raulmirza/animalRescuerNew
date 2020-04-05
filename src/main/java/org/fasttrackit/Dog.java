@@ -6,6 +6,10 @@ public class Dog extends Animal {
     private int energyLevel;
     private boolean bite;
 
+    public void showingHappinessState() {
+        System.out.println("This dog is waving his tail");
+    }
+
 
     public Dog(String name, String favoriteActivity, String favoriteFood) {
         super(favoriteActivity, favoriteFood, name);
@@ -44,6 +48,16 @@ public class Dog extends Animal {
                 '}';
     }
 
+    public void biteRescuer(Activity activity1,Boolean bite){
+        if (bite.equals(true)){
+        System.out.println(getName() + " is now " + activity1.getName());
+
+    }else if(bite.equals(false)){
+                System.out.println("This dog doesn't bite");
+            }
+        }
 
     }
+
+
 

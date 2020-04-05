@@ -12,23 +12,27 @@ public class App {
     public static void main( String[] args ) {
 
         Activity activity = new Activity("Playing catch");
-
-
         activity.setName("Playing catch");
-        System.out.println("Activity name: " + activity.getName());
 
+        Activity activity1 = new Activity("biting rescuer");
+        activity1.setName("Biting rescuer");
+
+
+        System.out.println("Activity name: " + activity.getName());
         Animal animal = new Animal("Playing catch", "Purina");
 
+        animal.setName("Spike");
        animal.setHealthLevel(1);
        animal.setFavoriteFood("Purina");
        animal.setAge(7);
        animal.setMood(5);
-       animal.setName("Spike");
        animal.setFavoriteActivity("Playing catch");
        animal.setHungerLevel(5);
 
+       animal.showingHappinessState();
+
         System.out.println("Animal name: "+ animal.getName());
-        System.out.println("Heatlh level: " + animal.getHealthLevel());
+        System.out.println("Health level: " + animal.getHealthLevel());
         System.out.println("Hunger level: " + animal.getHungerLevel());
         System.out.println("Favorite activity " + animal.getFavoriteActivity());
         System.out.println("Animal has now the mood: " + animal.getMood());
@@ -79,12 +83,15 @@ public class App {
         Dog dog = new Dog("Spike", "Playing catch", "Purina");
 
 
+        dog.biteRescuer(activity1,false);
+        dog.showingHappinessState();
 
+
+        dog.setName("Bullet");
         dog.setColour("Brown");
         dog.setBite(false);
         dog.setEnergyLevel(10);
         dog.setFavoriteFood("Purina");
-        dog.setName("Bullet");
         dog.setHungerLevel(8);
         dog.setFavoriteActivity("Playing catch");
         dog.setMood(8);
@@ -94,19 +101,20 @@ public class App {
         System.out.println("This animal name is: " + dog.getName());
         System.out.println("His favorite activity is: " + dog.getFavoriteActivity());
         System.out.println("His favorite food is: " + dog.getFavoriteFood());
-        System.out.println("This dog has an energy level of "  + dog.getEnergyLevel());
+        System.out.println("This dog has an energy level of: "  + dog.getEnergyLevel());
         System.out.println("Hunger level is: " + dog.getHungerLevel());
         System.out.println("His health level is: " + dog.getHealthLevel());
         System.out.println("Colour of the dog is: " + dog.getColour());
         System.out.println("This animal mood: " + dog.getMood());
-        System.out.println("This animal has" + dog.getAge() + "years");
-        System.out.println("Is this dog biteing?: " + dog.isBite());
+        System.out.println("This animal has: " + dog.getAge() + " years");
+        System.out.println("Is this dog biting?: " + dog.isBite());
 
 
 
 
         Pets pets = new Pets("Pets","Playing catch", "Purina");
 
+        pets.showingHappinessState();
 
         pets.setCategory("Dog");
         pets.setFavoriteFood("Purina");

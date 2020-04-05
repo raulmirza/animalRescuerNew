@@ -20,6 +20,9 @@ public class Animal {
         this.name = name;
         this.favoriteFood = favoriteFood;
     }
+    public void showingHappinessState() {
+        System.out.println("This animal is waving his tail");
+    }
 
     public String getName() {
         return name;
